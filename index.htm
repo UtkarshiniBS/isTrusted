@@ -22,6 +22,15 @@
 </div>
 
 <script>
+
+window.onload=function(){
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        console.log("Visit this on a Computer for Better View");              
+    } else {
+
+    }
+  }
 function trigger(event) {
   if ("isTrusted" in event) {
     if (event.isTrusted) {
@@ -38,6 +47,9 @@ function triggerClick() {
   var btn = document.getElementById("myBtn");
   btn.click();
 } 
+
+
+  
 </script>
 
 </body>
