@@ -22,24 +22,15 @@
 </div>
 
 <script>
-
-window.onload=function(){
-    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-    if (mobile) {
-        console.log("Visit this on a Computer for Better View");              
-    } else {
-
-    }
-  }
 function trigger(event) {
   if ("isTrusted" in event) {
     if (event.isTrusted) {
-      alert ("The " + event.type + " event is trusted.");
+      console.log("The " + event.type + " event is trusted.");
     } else {
-      alert ("The " + event.type + " event is not trusted.");
+      console.log("The " + event.type + " event is not trusted.");
     }
   } else {
-    alert ("The isTrusted property is not supported by your browser");
+    console.log("The isTrusted property is not supported by your browser");
   }
 }
 
